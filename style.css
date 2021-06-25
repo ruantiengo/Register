@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+        --sucess-color: #2ecc71;
+        --error-color: #e74c3c; 
+}
+*{
+        box-sizing: border-box;
+}
+body{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(248, 248, 248);
+        min-height: 100vh;
+}
+
+.container{
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 1.5px 3px rgba(0,0,0,2);
+        width: 450px;
+}
+.container h2{
+        font-size: 2rem;
+        text-align: center;
+}
+
+form{
+        margin: 3rem;
+}
+
+.form-control{
+        font-size: 1rem;
+        margin: 1rem;
+}
+
+.form-control label{
+        display: block;
+        margin-bottom: 0.5rem;
+}
+
+.form-control input{
+        font-size: 1rem;
+        width: 100%;
+        padding: 0.5rem;
+        
+}
+.form-control input:focus{
+        outline: 0;
+        border-color: #777;
+}
+.form-control small{
+        display: block;
+        font-size: 0.75rem;
+        color: var(--error-color);
+        position: absolute;
+      
+        visibility: hidden;
+        
+}
+
+.form-control.error small{
+        visibility: visible;
+}
+.form-control.error input{
+        border: 1px solid var(--error-color) ;
+}
+.form-control.success input{
+        border: 1px solid var(--sucess-color);
+}
+form button{
+        width: 100%;
+        background-color: #3498db;
+        border-radius: 0.4rem;
+        border: 2px solid;
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+        color: white;
+        margin-top: 2rem;
+        cursor: pointer;
+        padding: 1rem;
+}
+
+
